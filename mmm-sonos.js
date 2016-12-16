@@ -104,7 +104,7 @@
 		];
 	},
 	getStyles: function() {
-		return ['sonos.css'];
+		return ['mmm-sonos.css'];
 	},
 	getDom: function() {
 		var content = '';
