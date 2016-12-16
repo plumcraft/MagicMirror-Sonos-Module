@@ -6,7 +6,7 @@
  */
  Module.register('mmm-sonos', {
 	defaults: {
-		showStoppedRoom: true,
+		showStoppedRoom: false,
 		showAlbumArt: true,
 		showRoomName: true,
 		animationSpeed: 1000,
