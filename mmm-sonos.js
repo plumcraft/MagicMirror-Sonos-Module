@@ -4,7 +4,7 @@
  * By Christopher Fenner https://github.com/CFenner
  * MIT Licensed.
  */
- Module.register('sonos', {
+ Module.register('mmm-sonos', {
 	defaults: {
 		showStoppedRoom: true,
 		showAlbumArt: true,
