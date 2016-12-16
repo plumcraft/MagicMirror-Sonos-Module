@@ -1,24 +1,24 @@
-.sonos ul {
+.mmm-sonos ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.sonos ul .name,
-.sonos ul .art {
+.mmm-sonos ul .name,
+.mmm-sonos ul .art {
   display: inline-block;
   vertical-align: middle;
 }
-.sonos ul .name {
+.mmm-sonos ul .name {
   padding: 0 .25em;
 }
-.sonos ul .art img {
+.mmm-sonos ul .art img {
   height: 100px;
 }
-.sonos ul .room {
+.mmm-sonos ul .room {
   font-size: 50%;
   padding: .25em .5em;
 }
-.sonos ul.flip {
+.mmm-sonos ul.flip {
   direction: rtl;
 }
 
