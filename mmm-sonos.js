@@ -13,8 +13,7 @@
 		updateInterval: 0.5, // every 0.5 minutes
 		apiBase: 'http://localhost',
 		apiPort: 5005,
-		apiEndpoint: 'zones',
- 		exclude: []
+		apiEndpoint: 'zones'
 	},
 	start: function() {
 		Log.info('Starting module: ' + this.name);
@@ -36,14 +35,11 @@
 			var isGroup = item.members.length > 1;
 			if(isGroup){
 				$.each(item.members, function (j, member) {
-					var isExcluded = this.config.exclude.indexOf(member.roomName) !== -1;
-					room += isExcluded?'':(member.roomName + ', ');
-				});
+                                        room += member.roomName + ', ';
+                                });
 				room = room.replace(/, $/,"");
-			}else{
+			}else if(item.coordinator.state.currentTrack.type !== "line_in"){
 				room = item.coordinator.roomName;
-				var isExcluded = this.config.exclude.indexOf(room) !== -1;
-				room = isExcluded?'':room;
 			}
 			if(room !== ''){
 				var state = item.coordinator.state.playbackState;
